@@ -1,0 +1,29 @@
+.chat-message-user {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  margin-bottom: 16px;
+}
+.chat-message-robot {
+  display: flex;
+  align-items: start;
+  margin-bottom: 16px;
+}
+.chat-message-profile {
+  width: 45px;
+}
+.chat-message-text {
+  background-color: rgb(238, 238, 238);
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 50%;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.chat-message-container {
+  margin-top: 16px;
+  flex-grow: 1;
+  overflow: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
