@@ -1,49 +1,12 @@
 import './OrdersPage.css';
+import { Header } from '../components/Header.jsx';
 
 export function OrdersPage() {
   return (
     <>
       <title>Orders</title>
-      <div class="header">
-        <div class="left-section">
-          <a href="/" class="header-link">
-            <img
-              class="logo"
-              src="https://raw.githubusercontent.com/itsanup1/Images/main/logo-white.png"
-            />
-            <img
-              class="mobile-logo"
-              src="https://raw.githubusercontent.com/itsanup1/Images/main/mobile-logo-white.png"
-            />
-          </a>
-        </div>
 
-        <div class="middle-section">
-          <input class="search-bar" type="text" placeholder="Search" />
-
-          <button class="search-button">
-            <img
-              class="search-icon"
-              src="https://raw.githubusercontent.com/itsanup1/Images/main/icons/search-icon.png"
-            />
-          </button>
-        </div>
-
-        <div class="right-section">
-          <a class="orders-link header-link" href="/orders">
-            <span class="orders-text">Orders</span>
-          </a>
-
-          <a class="cart-link header-link" href="/checkout">
-            <img
-              class="cart-icon"
-              src="https://raw.githubusercontent.com/itsanup1/Images/main/icons/cart-icon.png"
-            />
-            <div class="cart-quantity">3</div>
-            <div class="cart-text">Cart</div>
-          </a>
-        </div>
-      </div>
+      <Header />
 
       <div class="orders-page">
         <div class="page-title">Your Orders</div>
