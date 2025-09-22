@@ -1,5 +1,5 @@
+import { useState } from 'react'
 import { Chatbot } from 'supersimpledev';
-import { useState } from 'react';
 import './ChatInput.css';
 
 export function ChatInput({ chatMessages, setChatMessages }) {
@@ -15,8 +15,8 @@ export function ChatInput({ chatMessages, setChatMessages }) {
       {
         message: inputText,
         sender: 'user',
-        id: crypto.randomUUID(),
-      },
+        id: crypto.randomUUID()
+      }
     ];
 
     setChatMessages(newChatMessages);
@@ -27,8 +27,8 @@ export function ChatInput({ chatMessages, setChatMessages }) {
       {
         message: response,
         sender: 'robot',
-        id: crypto.randomUUID(),
-      },
+        id: crypto.randomUUID()
+      }
     ]);
 
     setInputText('');
@@ -37,14 +37,16 @@ export function ChatInput({ chatMessages, setChatMessages }) {
   return (
     <div className="chat-input-container">
       <input
-        className="chat-input"
         placeholder="Send a message to Chatbot"
+        size="30"
         onChange={saveInputText}
         value={inputText}
+        className="chat-input"
       />
-      <button className="chat-send-button" onClick={sendMessage}>
-        Send
-      </button>
+      <button
+        onClick={sendMessage}
+        className="send-button"
+      >Send</button>
     </div>
   );
 }
